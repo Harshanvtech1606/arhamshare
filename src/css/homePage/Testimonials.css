@@ -1,0 +1,65 @@
+.testimonials {
+    padding: 50px 0px;
+}
+
+.testimonials .test-title h2 {
+    padding: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonials .test-f {
+    display: flex;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+}
+
+.testimonials .test-f .test-details {
+    width: 25%;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.testimonials .test-f .test-details .card {
+    border: none;
+    height: fit-content;
+    flex: 1;
+    padding: 10px 7px;
+}
+
+.testimonials .test-f .test-details p {
+    color: rgba(0, 0, 0, 0.527);
+    font-size: 16px;
+    line-height: 25px;
+    padding: 15px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonials .test-f .test-details h5 {
+    padding: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+@media (max-width:1199px) {
+    .testimonials .test-f .test-details {
+        width: 33.33%;
+    }
+}
+
+@media (max-width:991px) {
+    .testimonials .test-f .test-details {
+        width: 50%;
+    }
+}
+@media (max-width:576px) {
+    .testimonials .test-f .test-details {
+        width: 100%;
+    }
+}
+/* @media (max-width:768px) {
+
+    .testimonials .test-f {
+        display: flex;
+        flex-direction: column;
+    }
+} */

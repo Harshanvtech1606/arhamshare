@@ -1,0 +1,35 @@
+/* .H-partner .H-partner-content div h6 {
+    border: 1px solid rgb(0, 0, 0);
+    max-width: fit-content;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin: 0 auto;
+    font-weight: 600;
+} */
+
+.H-partner .H-partner-content h1{
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    /* padding-left: 150px; */
+}
+
+.H-partner .H-slider {
+    /* margin-left: 180px; */
+    margin-top: 80px;
+}
+
+.owl-theme .owl-dots {
+    display: none !important;
+}
+
+.owl-theme .owl-nav {
+    display: none !important;
+}
+
+@media (max-width:768px) {
+
+    .H-partner .H-slider{
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,214 @@
+.about-outer {
+    display: block;
+    width: 100%;
+    margin: 80px 0;
+
+}
+
+.about-outer .about-inner {
+    margin: 0 -15px;
+}
+
+.about-outer .about-inner .about-item {
+    display: flex;
+    position: relative;
+    background: url(../../../public/assets/image/about/ab-bg.png);
+    background-position: -50% -50%;
+    background-size: contain;
+}
+
+.about-outer .about-inner .about-item .about-left-item {
+    position: relative;
+}
+
+.about-outer .about-inner .about-item .about-right-item {
+    padding-left: 30px;
+    background: url(../../../public/assets/image/about/ab-bg.png);
+    background-position: right bottom;
+    background-size: contain;
+}
+
+.about-outer .about-inner .about-item .about-left-item .img-1,
+.about-outer .about-inner .about-item .about-left-item .img-2 {
+    width: 50%;
+    position: relative;
+}
+
+.about-outer .about-inner .about-item .about-left-item .img-1 img,
+.about-outer .about-inner .about-item .about-left-item .img-2 img {
+    width: 100%;
+}
+
+.about-outer .about-inner .about-item .about-left-item .img-1 {
+    margin-top: -30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    animation: move-1 3s ease 1;
+}
+
+
+.about-outer .about-inner .about-item .about-left-item .img-2 {
+    margin-bottom: -30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    animation: move-2 3s ease 1;
+}
+
+@keyframes move-1 {
+    0% {
+        top: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+
+    100% {
+        top: 0%;
+        transition: all 0.5s ease-in-out;
+
+    }
+}
+
+@keyframes move-2 {
+    0% {
+        top: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+
+    100% {
+        top: 0%;
+        transition: all 0.5s ease-in-out;
+
+    }
+}
+
+
+.about-outer .about-inner .about-item .about-right-item .about-top .btn {
+    padding: 2px 24px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.about-outer .about-inner .about-item .about-right-item .about-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    color: #212c40;
+    text-transform: none;
+    font-style: normal;
+    margin-bottom: 30PX;
+}
+
+.about-outer .about-inner .about-item .about-right-item .text {
+    font-size: 16px;
+    color: #262626;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.about-service .about-service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-service .about-service-item .icon img {
+    width: 100%;
+}
+
+.about-service .about-service-item .content {
+    margin-left: 30px;
+}
+
+.about-outer .about-inner .about-item .about-right-item .about-service .about-service-item .content .text-1 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 15px;
+}
+
+.about-outer .about-inner .about-item .about-right-item .about-service .about-service-item .content .text-2 {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #262626;
+    margin-bottom: 15px;
+    letter-spacing: 0.8px;
+}
+
+.about-outer .about-inner .about-item .about-right-item .service-btn {
+    padding: 10px 33px;
+    background: #627e1a;
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    color: #fff;
+    line-height: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.about-outer .about-inner .about-item .about-right-item .service-btn:hover {
+    background: #262626;
+}
+
+.about-outer .about-inner .about-item .about-item-btn {
+    position: absolute;
+    z-index: 22;
+    background: linear-gradient(45deg, #334C44, #040000);
+    width: 200px;
+    display: flex;
+    height: 80px;
+    border-radius: 15px;
+    padding: 0 5px;
+    right: 10%;
+    top: -5%;
+    margin: 0 5px;
+    align-items: center;
+    animation: about-1 5s ease infinite;
+}
+
+@keyframes about-1 {
+
+    100% {
+        right: -20px;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    95% {
+        right: -5px;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    100% {
+        right: -20px;
+        transition: all 0.5s ease-in-out;
+
+    }
+}
+
+.about-outer .about-inner .about-item .about-item-btn .item-left {
+    font-size: 47px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.about-outer .about-inner .about-item .about-item-btn .item-right {
+    font-size: 20;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 5px;
+}

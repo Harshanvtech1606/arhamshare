@@ -1,0 +1,170 @@
+.serviceHome {
+    padding: 0px 0px 50px;
+}
+
+.section-title h1 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    position: relative;
+    margin: 30px 0;
+}
+
+.section-title h1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 55px;
+    background: linear-gradient(45deg, #334C44, #040000)
+}
+
+.section-title h1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 1px;
+    width: 95%;
+    max-width: 255px;
+    background-color: #333;
+}
+
+.one h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+}
+
+.one h1:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #b80000;
+}
+
+
+.serviceHome .content-title div h6 {
+    border: 1px solid rgb(0, 0, 0);
+    max-width: fit-content;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.serviceHome .content-title h1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0px;
+    font-size: 36px;
+}
+
+.serviceHome .s-flex {
+    display: flex;
+}
+
+.serviceHome .s-flex .content {
+    position: relative;
+    width: 90%;
+    /* max-width: 400px; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.serviceHome .s-flex .content .content-overlay {
+    background: rgba(0, 0, 0, 0.199);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.serviceHome .s-flex .content:hover .content-overlay {
+    opacity: 1;
+}
+
+.serviceHome .s-flex .content .content-image {
+    width: 100%;
+    height: 100%;
+}
+
+.serviceHome .s-flex .content .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.serviceHome .s-flex .content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.serviceHome .s-flex .content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.serviceHome .s-flex .content .content-details p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+/* .fadeIn-bottom {
+    top: 80%;
+}
+
+.fadeIn-top {
+    top: 20%;
+} */
+
+.serviceHome .s-flex .content .fadeIn-left {
+    left: 20%;
+}
+
+/* .fadeIn-right {
+    left: 80%;
+} */
+
+@media (max-width:768px) {
+
+    .serviceHome .s-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}

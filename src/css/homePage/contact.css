@@ -1,0 +1,190 @@
+.f1{
+display:  block !important;
+margin-top: 150px;
+text-align: center;
+
+/* color: #4F5955;; */
+font-size: 36px;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+line-height: 1.25em;;
+}
+
+
+.fonts-contact{
+  
+    font-size: 16px;
+}
+
+.cnt-t1{
+    /* color: #535656; */
+    font-family: 'Poppins', sans-serif;
+
+}
+.cnt-sec-2{
+    margin-top: 200px !important;
+    /* padding-top: 10px !important; */
+}
+
+.cnt-2-txt{
+    margin-top: 50px !important;
+    width: 48.762%;
+}
+
+.contact-img{
+    width: 100%;
+    max-width: 485px;
+}
+
+.first-txt{
+    /* color:#4F5955;  */
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height:  1.25em;
+}
+
+.locatin_icon{
+transform: translateX(-50%);
+    color: #535656;
+    content: "\f3c5";
+    font-size: 25px;
+width: 10px !important;
+    
+}
+
+.sec-txt2-contact{
+    display: block;
+    /* color: #535656; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing:2px;
+    word-spacing: 2px;
+    width: 70% !important;
+
+    
+}
+
+.registered_address::after{
+    content: "";
+    display: block;
+    width: 100%;
+   max-width: 575px;
+    border-top: 1px solid #000; /* Adjust the color and border style as needed */
+    margin: 0 auto;
+    /* color: #4F5955; */
+    margin-left: 10px;
+}
+
+.contact-pera{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: rgba(2, 2, 2, 0.623);
+    font-size: 16px !important;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 27px;
+}
+
+.mail{
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    font-size: 17px;
+    color: #555555;
+}
+
+
+.fonts-contact{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* element.style {
+    z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    touch-action: pan-x pan-y;
+} */
+
+.map{
+    position: relative;
+}
+
+
+.map-txt {
+    margin-bottom: 200px !important;
+    margin-top: 150px;
+    transform: translate(-50% ,-50%);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    padding: 70px 70px;
+    text-align: center;
+    width: 100%;
+    max-width: 1050px;
+   
+}
+.text-map1{
+    /* color: #F2EDDC; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height:1.5em;
+}
+
+.text-map2{
+    /* color:#4F5955; */
+    font-size: 40px;
+    font-weight:600;
+    line-height: 1.25em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.text-map3{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: 535656;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+}
+
+.input-form input {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #4f59559c;
+    border-radius: 5px;
+}
+
+.contact-t{
+    color: rgba(2, 2, 2, 0.623);
+    font-size: 16px !important;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 27px;
+}
+
+.btn-d{
+    font-weight: 700 !important;
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    transition: all 0.7 ease-in-out;
+}
+
+.btn-d:hover{
+    color: white;
+    background-color: black;
+}

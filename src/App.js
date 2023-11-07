@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from './common components/Header';
+import Footer from './common components/Footer';
+import HomePage from './page/HomePage';
+import AboutUs from './page/AboutUs';
+import { AnimatePresence } from "framer-motion";
+import Loader from './common components/Loader';
+import Contact from '../src/page/Contact';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>{isLoading ? (
+      <Loader />
+    ) : (
+      <BrowserRouter>
+          <Header />
+          <AnimatePresence mode='wait'>
+            <Routes>
+              <Route index element={<HomePage />} />
+              <Route path='/about' element={<AboutUs />} />
+              <Route path='/Contact' element={<Contact />} />
+
+
+              {/* Add more routes as needed */}
+            </Routes>
+          </AnimatePresence>
+          <Footer />
+        
+      </BrowserRouter>
+    )}
+    </>
   );
 }
 

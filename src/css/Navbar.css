@@ -1,0 +1,312 @@
+.header-outer {
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background: linear-gradient(45deg, #334C44A1, #111010);
+}
+
+
+.header__bottom__inner {
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.header__logo a {
+    display: inline-block;
+}
+
+.main-navigation ul li:nth-child(4) .header__logo .header__logo a {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main-navigation ul li .sub-menu li {
+    display: block;
+    padding: 0;
+    position: relative;
+}
+
+.header__logo a img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (max-width: 767px) {
+    .header__logo a {
+        padding: 20px 0;
+    }
+}
+
+.header__toggle {
+    padding: 0 3px;
+    border: 0;
+    background-color: transparent;
+}
+
+.header__toggle span {
+    width: 25px;
+    height: 2px;
+    background-color: #242424;
+    margin: 5px 0;
+    display: block;
+}
+
+
+/**
+  Navigation Styles
+  */
+.main-navigation {
+    display: flex;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+
+.main-navigation>ul>li:hover>a {
+    color: #00AC1F;
+}
+
+.main-navigation ul li a i {
+    padding-left: 10px;
+}
+
+.main-navigation ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.main-navigation ul li {
+    display: flex;
+    position: relative;
+    padding: 34px 16px;
+}
+
+.main-navigation ul li:last-child {
+    padding: 0;
+}
+
+.main-navigation ul .header__logo {
+    width: 16%;
+    padding: 0;
+    margin: 10px 28px;
+}
+
+.main-navigation ul li a {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    color: #e1e1e1!important;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-navigation ul li .sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 275px;
+    background: #ffffff;
+    visibility: hidden;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out 0s;
+    z-index: 11;
+    padding: 15px;
+}
+
+.main-navigation ul li:hover .sub-menu li {
+    display: block;
+    padding: 0;
+    position: relative;
+}
+
+.main-navigation ul li .sub-menu li.menu-item-has-children>a:after {
+    content: "\f105";
+    float: right;
+    margin-top: 0;
+    padding-right: 10px;
+}
+
+.main-navigation ul li .sub-menu li a {
+    display: block;
+    font-size: 12px;
+    background: #ffffff;
+    color: #111010;
+    padding: 4px 0;
+    letter-spacing: 0.5px;
+    position: relative;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+.main-navigation ul li .sub-menu li:hover>a {
+    background: #f1f1f1;
+    padding-left: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-navigation ul li .sub-menu li.sub-menu>a {
+    position: relative;
+}
+
+.main-navigation ul li .sub-menu li.sub-menu>a:after {
+    content: "\f105";
+    font-family: fontAwesome;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -15px;
+    font-size: 14px;
+}
+
+.main-navigation ul li .sub-menu li ul {
+    position: absolute;
+    left: calc(100% + 15px);
+    top: 0;
+    width: 275px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    padding: 15px;
+    background: #fff;
+}
+
+.main-navigation ul li .sub-menu li:hover ul {
+    visibility: visible;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.main-navigation ul li:hover a:before {
+    width: 100%;
+}
+
+.main-navigation ul li:hover>.sub-menu {
+    visibility: visible;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.main-navigation ul li.last-elements .sub-menu {
+    right: 0;
+    left: auto;
+}
+
+.main-navigation ul li.last-elements .sub-menu .sub-menu {
+    left: auto;
+    right: calc(100% + 15px);
+    background: #fff;
+}
+
+.main-navigation ul ul {
+    display: block;
+    background: #fff;
+}
+
+/* HEADER-BUTTON */
+.header-btn {
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    font-weight: 600;
+    width: 200px;
+    transition: all 0.5s;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    margin-left: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+
+
+.header-btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.header-btn::after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+    width: 16px;
+    line-height: 11px;
+}
+
+.header-btn:hover {
+    padding-right: 20px;
+    padding-left: 8px;
+    background: #fff;
+    color: #000;
+}
+
+.header-btn:hover:after {
+    opacity: 1;
+    right: 8px;
+}
+
+/* Header-sticky-bottom */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #334C44, #040000);
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.header__bottom {
+    background: transparent;
+    top: 0;
+    z-index: 22;
+    width: 100%;
+    position: absolute;
+    background: #333333;
+}
+
+
+
+.header__bottom.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    transition: background-color 0.3s;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}

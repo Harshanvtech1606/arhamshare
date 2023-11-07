@@ -1,0 +1,8 @@
+.owl-theme .owl-dots {
+    margin-top: -35px !important;
+    background-color: white !important;
+}
+
+.owl-carousel button.owl-dot {
+    color: white !important;
+}
